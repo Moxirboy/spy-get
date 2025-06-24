@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  tor:
+    image: dperson/torproxy
+    container_name: tor-proxy
+    ports:
+      - "9050:9050"
+    restart: unless-stopped
